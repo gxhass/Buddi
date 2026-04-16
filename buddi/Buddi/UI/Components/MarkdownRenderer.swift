@@ -17,10 +17,12 @@ struct BuddiMarkdownText: View {
                 .font(.system(size: fontSize))
                 .foregroundStyle(baseColor)
                 .tint(Color.accentColor)
+                .textSelection(.enabled)
         } else {
             SwiftUI.Text(text)
                 .font(.system(size: fontSize))
                 .foregroundStyle(baseColor)
+                .textSelection(.enabled)
         }
     }
 }
